@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">Quizilla</span>
+            <button id="hintBtn" class="hint-btn">Hint</button>
+        </div>
+    </nav>
+    <div class="quiz-container" id="quiz">
+        <div id="question-container">
+            <h2 id="question">Loading question...</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <span id="a_text">Option A</span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <span id="b_text">Option B</span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <span id="c_text">Option C</span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <span id="d_text">Option D</span>
+                </label>
+            </div>
+        </div>
+        <button id="submit" disabled>Submit</button>
+        <div id="result-container"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quizilla. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

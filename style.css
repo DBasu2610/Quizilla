@@ -1,0 +1,131 @@
+/* Navbar Styles */
+nav {
+    width: 100%;
+    background-color: #000; /* Black background for navbar */
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white; /* White text for logo */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hint-btn {
+    background-color: #555; /* Dark grey background for button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hint-btn:hover {
+    background-color: #777; /* Lighter grey on hover */
+}
+
+.hint-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Body and Quiz Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #333, #555); /* Dark gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f1f1f1; /* Light text color */
+}
+
+.quiz-container {
+    background-color: #222; /* Dark background for quiz container */
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff; /* White text for questions */
+}
+
+.options label {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #333; /* Dark background for options */
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.options label:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+button {
+    background-color: #555; /* Dark grey background for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777; /* Lighter grey on hover */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#result-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Highlight correct answer */
+.correct-answer {
+    background-color: #4caf50 !important;
+    color: white !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
